@@ -83,7 +83,28 @@
                                      background-color: blue;
                  }
                  
-                 .container .slider .box{
+                 .container .slider .box1{
+                                         /*margin-left: 10%;*/
+                                         /*width: 880px;*/
+                                         margin-top: 10%;
+                                         height: 450px;
+                                         background-color: green;
+                 }
+                 .container .slider .box2{
+                                         /*margin-left: 10%;*/
+                                         /*width: 880px;*/
+                                         margin-top: 10%;
+                                         height: 450px;
+                                         background-color: green;
+                 }
+                 .container .slider .box3{
+                                         /*margin-left: 10%;*/
+                                         /*width: 880px;*/
+                                         margin-top: 10%;
+                                         height: 450px;
+                                         background-color: green;
+                 }
+                 .container .slider .box4{
                                          /*margin-left: 10%;*/
                                          /*width: 880px;*/
                                          margin-top: 10%;
@@ -201,17 +222,33 @@
     width: 100px;
   }
   .container{
-    height: 1050px;
+    height: 950px;
   }
-  .container .slider .box{
+  .container .slider .box1{
     width: 100%;
+    height: 1000px;
   }
-  .main{
+  .container .slider .box2{
+    width: 100%;
+    height: 1000px;
+    /*margin-top: 50%;*/
+  }
+  .container .slider .box3{
+    width: 100%;
+    height: 1000px;
+    /*margin-top: 50%;*/
+  }
+  .container .slider .box4{
+    width: 100%;
+    height: 1000px;
+    /*margin-top: 50%;*/
+  }
+  /*.main{
     width: 100%;
     height: 1050px;
-  }
+  }*/
   #b2{
-    margin-top: 100px;
+    margin-top: 0px;
   }
   .container .slider{
                                      width: 100%;
@@ -325,7 +362,7 @@
                 
                 <div class="slider" id="sld">
 
-                   <div class="box" style="width: 100%;">
+                   <div class="box1" id="b1" style="width: 100%;">
 
                      
                   <!-- <div class="col-sm-3" style="width: 5px;height: 300px;border: 1px solid red;">
@@ -340,7 +377,7 @@
          
                     </div>
                 
-                    <div class="box" id="b2">
+                    <div class="box2" id="b2">
                       <h1 style="font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">2. Please chose the flooring type of your Bedroom?</h1>
 
                       <div class="ab" style="width: 90%;height: 200px;background-color: transparent;">
@@ -367,7 +404,7 @@
          
                     </div>
                     </div>
-                    <div class="box">
+                    <div class="box3">
                       <h1 style="margin-top: 100px;font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">3. Number of washrooms required?</h1>
 
                       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -400,7 +437,7 @@
     <span><input type="radio" name="rating" id="str1" value="1"  onclick="wash()"><label for="str1"></label></span>
 </div>
                     </div>
-                    <div class="box"><br><br>
+                    <div class="box4"><br><br>
                       <h1 style="margin-top: 200px;margin-top: 100px;font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">Thank you for providing us your details!!</h1>
                       <a href="index.html"><button class="button"><span>Submit </span></button></a>
 
@@ -422,7 +459,7 @@
             
             function fNext(){
                 
-                showed_box += -500;
+                showed_box += -1000;
                 
                 if(showed_box < -2000)
                     showed_box = 0;
@@ -432,7 +469,7 @@
             
             function fPrevious(){
                 
-                showed_box += 500;
+                showed_box += 1000;
                 
                 if(showed_box > 0)
                     showed_box = -2000;

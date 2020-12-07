@@ -236,13 +236,91 @@
        .ab{
         width:13%;
        } 
+       #ab_1{
+        width: 13%;
+       }
+
+         .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 10%;
+  height: 300px;
+  /*margin-left: 4%;*/
+}
+
+.flex-item2 {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 10%;
+  height: 300px;
+  margin-left: 4%;
+}
+.flex-item3 {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 10%;
+  height: 300px;
+  margin-left: 4%;
+}
+.flex-item4 {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 10%;
+  height: 300px;
+  margin-left: 4%;
+}
+.flex-item5 {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 10%;
+  height: 300px;
+  margin-left: 4%;
+}
+
 
        @media (max-width: 800px) {
 
             .ab
             {
-                width: 40%;
+                width: 100%;
             }
+            .main{
+                height: 550px;
+            }
+            #ab_1{
+        width: 40%;
+       }
+
+        .container{
+                             width: 100%;
+                             height: 850px;
+                             /*margin: 30px auto;*/
+                             /*border: 1px solid #000;*/
+                             position: relative;
+                             overflow: hidden;
+                             /*background-color: yellow;*/
+                 }   
+            
+                 .container .slider{
+                                     width: 550px;
+                                     height: 5000px;
+                                     position: absolute;
+                                     transition: all 1s ease-in-out;
+                 }
+                 
+                 .container .slider .box{
+                                         float: left;
+                                         width: 1080px;
+                                         height: 850px;
+                 }
+
         }
 
         </style>
@@ -410,11 +488,11 @@
                 
                 <div class="slider" id="sld">
                     
-                    <div class="box" style="width: 1100px;">
+                    <div class="box">
                         <h1>1. Please chose the type of your Bedroom?</h1>
 
-                        <div  class="ab" style="width: 100%;background-color: transparent;">
-                            <div id="ab_1" class="ab1" style="float: left;margin-right: 15px;margin-left: 40px;border:1px solid white; border-radius: 5%;" onclick="typ1()">
+                        <div  class="flex-container" style="width: 100%;background-color: transparent;">
+                            <div id="ab_1" class="flex-item1" style="float: left;margin-right: 15px;margin-left: 40px;border:1px solid white; border-radius: 5%;" onclick="typ1()">
                                 <span class="bdr" id="tp1" style="color: white;">&#10003;</span>
 
 
@@ -427,7 +505,7 @@ Flooring : Vitrified Tile - Kajaria / Somany (Economy)<br>
 Woodwork : Semi Modular, Hettich ( Non-Soft Close) Laminate Finish</p>
                             </div>
                         </div>
-                        <div id="ab_2 "class="ab1" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ2()">
+                        <div id="ab_2 "class="flex-item2" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ2()">
                             <span class="bdr"  id="tp2">&#10003;</span>
                             
 
@@ -441,16 +519,17 @@ Woodwork : Semi Modular, Hettich ( Non-Soft Close) Laminate Finish</p>
 
                             </div>
                         </div>
-                        <div class="ab1" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ3()">
+                        <div class="flex-item3
+                        " style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ3()">
                             <span class="bdr"  id="tp3">&#10003;</span>
                             <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Luxury</p></center>
                         </div>
-                        <div class="ab1" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ4()">
+                        <div class="flex-item4" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ4()">
                             <span class="bdr"  id="tp4">&#10003;</span>
                             <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Sweet</p></center>
                         </div>
 
-                        <div class="ab1" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ4()">
+                        <div class="flex-item5" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ4()">
                             <span class="bdr"  id="tp4">&#10003;</span>
                             <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Sweet</p></center>
                         </div>
