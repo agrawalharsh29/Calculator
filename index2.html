@@ -49,8 +49,8 @@
             
             *{box-sizing: border-box}
             body{
-            	background-image:url(back2.jpg);
-            	background-size: cover;
+                background-image:url(back2.jpg);
+                background-size: cover;
             }
 
 
@@ -175,10 +175,10 @@
                  .previous{bottom: 0}
 
                  .ab1{
-                 	background-color: rgb(255,255,255,0.1);
+                    background-color: rgb(255,255,255,0.1);
                  }
                  .ab1:hover{
-                 	background-color: rgb(255,255,255,0.2);
+                    background-color: rgb(255,255,255,0.2);
                  }
                  span.bdr{
   content: "\2713";
@@ -188,20 +188,20 @@
 }
 
 #det{
-	color: white;
-	/*margin-top: 40px;*/
-	/*position: absolute;*/
-	margin-top: 2px;
-	margin-left: 2px;
+    color: white;
+    /*margin-top: 40px;*/
+    /*position: absolute;*/
+    margin-top: 2px;
+    margin-left: 2px;
 }
 #detail
 {
-	width: 50px;
-	height: 20px;
-	border:1px solid white;
-	margin-top: -12px;
-	position: absolute;
-	margin-left: 20px;
+    width: 50px;
+    height: 20px;
+    border:1px solid white;
+    margin-top: -12px;
+    position: absolute;
+    margin-left: 20px;
 
 }
 
@@ -225,22 +225,37 @@
 }
 
 #txt1{
-	display: none;
+    display: none;
 }
        #txt2{
-       	display: none;
-       }          
+        display: none;
+       }       
+       h1{
+        font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;
+       }  
+       .ab{
+        width:13%;
+       } 
+
+       @media (max-width: 800px) {
+
+            .ab
+            {
+                width: 40%;
+            }
+        }
+
         </style>
         
     </head>
     <body>
-    	<script type="text/javascript">
+        <script type="text/javascript">
 
-    		function typ1()
-    		{
-    			document.getElementById("tp1").style.display= "block";
-    			// document.getElementById("tp").style.color= "red";
-    			 var showed_box = 0;
+            function typ1()
+            {
+                document.getElementById("tp1").style.display= "block";
+                // document.getElementById("tp").style.color= "red";
+                 var showed_box = 0;
             
                 
                 showed_box += -500;
@@ -250,11 +265,11 @@
                 
                 document.getElementById('sld').style.transform = "translateY("+showed_box+"px)"; 
             }
-            	function typ2()
-    		{
-    			document.getElementById("tp2").style.display= "block";
-    			// document.getElementById("tp").style.color= "red";
-    			 var showed_box = 0;
+                function typ2()
+            {
+                document.getElementById("tp2").style.display= "block";
+                // document.getElementById("tp").style.color= "red";
+                 var showed_box = 0;
             
                 
                 showed_box += -500;
@@ -263,12 +278,12 @@
                     showed_box = 0;
                 
                 document.getElementById('sld').style.transform = "translateY("+showed_box+"px)";
-    		}
-    		function typ3()
-    		{
-    			document.getElementById("tp3").style.display= "block";
-    			// document.getElementById("tp").style.color= "red";
-    			 var showed_box = 0;
+            }
+            function typ3()
+            {
+                document.getElementById("tp3").style.display= "block";
+                // document.getElementById("tp").style.color= "red";
+                 var showed_box = 0;
             
                 
                 showed_box += -500;
@@ -277,13 +292,13 @@
                     showed_box = 0;
                 
                 document.getElementById('sld').style.transform = "translateY("+showed_box+"px)";
-    		}
-    		
-    		function typ4()
-    		{
-    			document.getElementById("tp4").style.display= "block";
-    			// document.getElementById("tp").style.color= "red";
-    			 var showed_box = 0;
+            }
+            
+            function typ4()
+            {
+                document.getElementById("tp4").style.display= "block";
+                // document.getElementById("tp").style.color= "red";
+                 var showed_box = 0;
             
                 
                 showed_box += -500;
@@ -292,14 +307,14 @@
                     showed_box = 0;
                 
                 document.getElementById('sld').style.transform = "translateY("+showed_box+"px)";
-    		}
+            }
 
-    		var showed_box = 1;
-    		function flr1()
-    		{
-    			document.getElementById("flr1").style.display= "block";
-    			// document.getElementById("tp").style.color= "red";
-    			 
+            var showed_box = 1;
+            function flr1()
+            {
+                document.getElementById("flr1").style.display= "block";
+                // document.getElementById("tp").style.color= "red";
+                 
             
                 
                 showed_box += -500;
@@ -308,13 +323,13 @@
                     showed_box = 0;
                 
                 document.getElementById('sld').style.transform = "translateY("+showed_box+"px)";
-    		}
-    		var showed_box = 1;
-    		function wash()
-    		{
-    			// document.getElementById("flr1").style.display= "block";
-    			// document.getElementById("tp").style.color= "red";
-    			 
+            }
+            var showed_box = 1;
+            function wash()
+            {
+                // document.getElementById("flr1").style.display= "block";
+                // document.getElementById("tp").style.color= "red";
+                 
             
                 
                 showed_box += -500;
@@ -323,28 +338,28 @@
                     showed_box = 0;
                 
                 document.getElementById('sld').style.transform = "translateY("+showed_box+"px)";
-    		}
+            }
 
-    		function dtl()
-    		{
-    			document.getElementById('txt1').style.display ="block";
-    			document.getElementById('detail').style.width = "150px";
-    			document.getElementById('detail').style.height = "180px";
-    			document.getElementById('detail').style.color = "white";
+            function dtl()
+            {
+                document.getElementById('txt1').style.display ="block";
+                document.getElementById('detail').style.width = "150px";
+                document.getElementById('detail').style.height = "180px";
+                document.getElementById('detail').style.color = "white";
                 document.getElementById('ab_1').style.height = "200px";
 
-    		}
+            }
 
-    		function dlt1()
-    		{
-    			// document.getElementById('detail').innerHTML = "details";
-    			document.getElementById('detail').style.width = "50px";
-    			document.getElementById('detail').style.height = "20px";
-    			document.getElementById('detail').style.color = "white";
+            function dlt1()
+            {
+                // document.getElementById('detail').innerHTML = "details";
+                document.getElementById('detail').style.width = "50px";
+                document.getElementById('detail').style.height = "20px";
+                document.getElementById('detail').style.color = "white";
                 document.getElementById('ab_1').style.height = "200px";
                 document.getElementById('txt1').style.display ="none";
 
-    		}
+            }
 
 
             function dtl2()
@@ -383,10 +398,10 @@
 
             }
 
-    		
+            
 
-    		
-    	</script>
+            
+        </script>
 
 
         <div class="main">
@@ -396,28 +411,28 @@
                 <div class="slider" id="sld">
                     
                     <div class="box" style="width: 1100px;">
-                    	<h1 style="font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">1. Please chose the type of your Bedroom?</h1>
+                        <h1>1. Please chose the type of your Bedroom?</h1>
 
-                    	<div  class="ab" style="width: 100%;background-color: transparent;">
-                    		<div id="ab_1" class="ab1" style="width: 13%;float: left;margin-right: 15px;margin-left: 40px;border:1px solid white; border-radius: 5%;" onclick="typ1()">
-                    			<span class="bdr" id="tp1" style="color: white;">&#10003;</span>
+                        <div  class="ab" style="width: 100%;background-color: transparent;">
+                            <div id="ab_1" class="ab1" style="float: left;margin-right: 15px;margin-left: 40px;border:1px solid white; border-radius: 5%;" onclick="typ1()">
+                                <span class="bdr" id="tp1" style="color: white;">&#10003;</span>
 
 
-                    			<img src="bedroom.png" width="120px" height="80px" style="margin-top: 40px;margin-left: 10px;">
-                    			<center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 20px;">Economy</p></center>
-                    			<div id="detail" onmouseover="dtl()" onmouseout="dlt1()">
-                    			<p id="det" >details</p>
-                    			<p id="txt1" style="font-size: 12px;color: white;">Switches & Fans : Anchor/ Orpat / Finolex<br>
+                                <img src="bedroom.png" width="120px" height="80px" style="margin-top: 40px;margin-left: 10px;">
+                                <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 20px;">Economy</p></center>
+                                <div id="detail" onmouseover="dtl()" onmouseout="dlt1()">
+                                <p id="det" >details</p>
+                                <p id="txt1" style="font-size: 12px;color: white;">Switches & Fans : Anchor/ Orpat / Finolex<br>
 Flooring : Vitrified Tile - Kajaria / Somany (Economy)<br>
 Woodwork : Semi Modular, Hettich ( Non-Soft Close) Laminate Finish</p>
-                    		</div>
-                    	</div>
-                    	<div id="ab_2 "class="ab1" style="width: 13%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ2()">
-                    		<span class="bdr"  id="tp2">&#10003;</span>
-                    		
+                            </div>
+                        </div>
+                        <div id="ab_2 "class="ab1" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ2()">
+                            <span class="bdr"  id="tp2">&#10003;</span>
+                            
 
-                    		<img src="bedroom.png" width="120px" height="80px" style="margin-top: 40px;margin-left: 10px;">
-                    		<center><p id="types1" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 20px;">Premium</p></center>
+                            <img src="bedroom.png" width="120px" height="80px" style="margin-top: 40px;margin-left: 10px;">
+                            <center><p id="types1" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 20px;">Premium</p></center>
                             <div id="pqr" onmouseover="dtl2()" onmouseout="dlt3()">
                                 <p id="pq" >details</p>
                                 <p id="txt2" style="font-size: 12px;color: white;">Switches & Fans : Anchor/ Orpat / Finolex<br>
@@ -425,62 +440,62 @@ Flooring : Vitrified Tile - Kajaria / Somany (Economy)<br>
 Woodwork : Semi Modular, Hettich ( Non-Soft Close) Laminate Finish</p>
 
                             </div>
-                    	</div>
-                    	<div class="ab1" style="width: 13%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ3()">
-                    		<span class="bdr"  id="tp3">&#10003;</span>
-                    		<center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Luxury</p></center>
-                    	</div>
-                    	<div class="ab1" style="width: 13%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ4()">
-                    		<span class="bdr"  id="tp4">&#10003;</span>
-                    		<center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Sweet</p></center>
-                    	</div>
+                        </div>
+                        <div class="ab1" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ3()">
+                            <span class="bdr"  id="tp3">&#10003;</span>
+                            <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Luxury</p></center>
+                        </div>
+                        <div class="ab1" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ4()">
+                            <span class="bdr"  id="tp4">&#10003;</span>
+                            <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Sweet</p></center>
+                        </div>
 
-                    	<div class="ab1" style="width: 13%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ4()">
-                    		<span class="bdr"  id="tp4">&#10003;</span>
-                    		<center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Sweet</p></center>
-                    	</div>
+                        <div class="ab1" style="height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;margin-left: 40px;" onclick="typ4()">
+                            <span class="bdr"  id="tp4">&#10003;</span>
+                            <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Sweet</p></center>
+                        </div>
 
 
-                	<!-- <div class="col-sm-3" style="width: 5px;height: 300px;border: 1px solid red;">
-                	</div> -->
+                    <!-- <div class="col-sm-3" style="width: 5px;height: 300px;border: 1px solid red;">
+                    </div> -->
          
                     </div>
                 </div>
                     <div class="box" style="margin-top: 30px;">
-                    	<h1 style="font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">2. Please chose the flooring type of your Bedroom?</h1>
+                        <h1 style="font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">2. Please chose the flooring type of your Bedroom?</h1>
 
-                    	<div class="ab" style="width: 90%;height: 200px;background-color: transparent;">
-                    		<div class="ab1" style="width: 20%;height: 190px;float: left;margin-right: 15px;margin-left: 20px;border:1px solid white; border-radius: 5%;" onclick="flr1()">
-                    			<span class="bdr" id="flr1">&#10003;</span>
-                    			<center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Wooden</p></center>
-                    	</div>
-                    	<div class="ab1" style="width: 20%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;" onclick="flr1()">
-                    		<span class="bdr" id="tp2">&#10003;</span>
-                    		<center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Marble</p></center>
-                    	</div>
-                    	<div class="ab1" style="width: 20%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;" onclick="typ3()">
-                    		<span class="bdr" id="tp3">&#10003;</span>
-                    		<center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Tiles</p></center>
-                    	</div>
-                    	<div class="ab1" style="width: 20%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;" onclick="typ4()">
-                    		<span class="bdr" id="tp4">&#10003;</span>
-                    		<center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Other</p></center>
-                    	</div>
+                        <div class="ab" style="width: 90%;height: 200px;background-color: transparent;">
+                            <div class="ab1" style="width: 20%;height: 190px;float: left;margin-right: 15px;margin-left: 20px;border:1px solid white; border-radius: 5%;" onclick="flr1()">
+                                <span class="bdr" id="flr1">&#10003;</span>
+                                <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Wooden</p></center>
+                        </div>
+                        <div class="ab1" style="width: 20%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;" onclick="flr1()">
+                            <span class="bdr" id="tp2">&#10003;</span>
+                            <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Marble</p></center>
+                        </div>
+                        <div class="ab1" style="width: 20%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;" onclick="typ3()">
+                            <span class="bdr" id="tp3">&#10003;</span>
+                            <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Tiles</p></center>
+                        </div>
+                        <div class="ab1" style="width: 20%;height: 190px;float: left;margin-right: 15px;border:1px solid white;border-radius: 5%;" onclick="typ4()">
+                            <span class="bdr" id="tp4">&#10003;</span>
+                            <center><p id="types" style="color: white;font-weight: bold;font-family: Ubuntu;letter-spacing: 2px;margin-top: 80px;">Other</p></center>
+                        </div>
 
 
-                	<!-- <div class="col-sm-3" style="width: 5px;height: 300px;border: 1px solid red;">
-                	</div> -->
+                    <!-- <div class="col-sm-3" style="width: 5px;height: 300px;border: 1px solid red;">
+                    </div> -->
          
                     </div>
                     </div>
                     <div class="box">
-                    	<h1 style="margin-top: 100px;font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">3. Number of washrooms required?</h1>
+                        <h1 style="margin-top: 100px;font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">3. Number of washrooms required?</h1>
 
-                    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-                    	<script type="text/javascript">
-    		
-    		$(document).ready(function(){
+                        <script type="text/javascript">
+            
+            $(document).ready(function(){
     // Check Radio-box
     $(".rating input:radio").attr("checked", false);
 
@@ -496,7 +511,7 @@ Woodwork : Semi Modular, Hettich ( Non-Soft Close) Laminate Finish</p>
     }); 
 });
 
-    	</script>
+        </script>
        
 <div class="rating">
     <span><input type="radio" name="rating" id="str5" value="5" onclick="wash()"><label for="str5"></label></span>
@@ -507,8 +522,8 @@ Woodwork : Semi Modular, Hettich ( Non-Soft Close) Laminate Finish</p>
 </div>
                     </div>
                     <div class="box"><br><br>
-                    	<h1 style="margin-top: 200px;margin-top: 100px;font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">Thank you for providing us your details!!</h1>
-                    	<a href="index.html"><button class="button"><span>Submit </span></button></a>
+                        <h1 style="margin-top: 200px;margin-top: 100px;font-family: Ubuntu;color: white;font-weight: 1500;letter-spacing: 2px;">Thank you for providing us your details!!</h1>
+                        <a href="index.html"><button class="button"><span>Submit </span></button></a>
 
                     </div>
                     <div class="box"></div>
